@@ -1,0 +1,12 @@
+micronaut:
+  security:
+    authentication: idtoken # <1>
+    oauth2:
+      clients:
+        google: #TODO--
+          client-id: #TODO--
+          client-secret: #TODO--
+          openid:
+            issuer: #TODO--
+#app:
+#  hosted-domain: 'http://localhost:8080'

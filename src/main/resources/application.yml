@@ -1,0 +1,19 @@
+micronaut:
+  application:
+    name: micronautguide
+#tag::oauth2[]
+---
+micronaut:
+  security:
+    authentication: idtoken # <1>
+    oauth2:
+      clients:
+        google: #TODO--
+          client-id: #TODO--
+          client-secret: #TODO--
+          openid:
+            issuer: #TODO--
+    endpoints:
+      logout:
+        get-allowed: true # <6>
+#end::oauth2[]
